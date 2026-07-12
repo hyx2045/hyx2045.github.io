@@ -140,6 +140,13 @@
   .game.coming .tag { background: rgba(95, 168, 120, 0.15); color: var(--green); }
   .game h3 { font-size: 1.3rem; font-weight: 900; letter-spacing: 1px; }
   .game p { margin-top: 10px; color: var(--text-dim); font-size: 0.95rem; }
+  .game-link {
+    display: inline-block; margin-top: 16px;
+    color: var(--amber-soft); text-decoration: none; font-weight: 700; font-size: 0.95rem;
+    border-bottom: 1px dashed rgba(242, 183, 110, 0.5); padding-bottom: 2px;
+    transition: color .2s, border-color .2s;
+  }
+  .game-link:hover { color: var(--amber); border-color: var(--amber); }
 
   /* ── Process ── */
   .steps { margin-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; counter-reset: step; }
@@ -259,6 +266,7 @@
         <span class="tag">主力服務中</span>
         <h3>天使之戀 Online</h3>
         <p>代練、虛寶、點數全服務項目支援。熟悉版本生態與行情,經驗豐富。</p>
+        <a class="game-link" href="angels-online/">🐙 查看帶練方案與價目 →</a>
       </div>
       <div class="game coming">
         <span class="tag">陸續開放</span>

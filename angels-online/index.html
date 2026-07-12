@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>老八度假旅行社|天使之戀帶練方案 — 暮林工作室</title>
+<meta name="description" content="來濕熱林渡假,等級交給老八。天使之戀 Online 維納斯伺服器濕熱林帶練團:白天 Chill 行程、夜宿渡假方案,全方案採天使支票交易,截圖存證、斷線即停錶的雙方保障。">
+<meta property="og:title" content="老八度假旅行社|天使之戀帶練方案">
+<meta property="og:description" content="來濕熱林渡假,等級交給老八。白天 Chill 行程・夜宿渡假方案・雙方保障。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lucienlo.github.io/angels-online/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐙%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d1622;
+    --bg-soft: #12202f;
+    --card: #18293c;
+    --card-hover: #1e3248;
+    --line: #28405a;
+    --text: #eae8e2;
+    --text-dim: #9caebf;
+    --sand: #e8c07c;
+    --sand-deep: #d9a24e;
+    --coral: #f0855a;
+    --teal: #4fc3a1;
+    --night: #2b3a6b;
+    --line-green: #06c755;
+    --radius: 14px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px clamp(20px, 5vw, 60px);
+    background: rgba(13, 22, 34, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-brand { font-weight: 900; font-size: 1.05rem; color: var(--text-dim); text-decoration: none; transition: color .2s; }
+  .nav-brand:hover { color: var(--sand); }
+  .nav-links { display: flex; gap: clamp(14px, 3vw, 28px); }
+  .nav-links a { color: var(--text-dim); text-decoration: none; font-size: 0.92rem; font-weight: 500; transition: color .2s; }
+  .nav-links a:hover { color: var(--sand); }
+
+  /* ── Hero:海邊夕陽 ── */
+  .hero {
+    position: relative; text-align: center;
+    padding: clamp(70px, 11vh, 120px) clamp(20px, 5vw, 60px) clamp(100px, 15vh, 160px);
+    background:
+      radial-gradient(ellipse 100% 80% at 50% -20%, rgba(240, 133, 90, 0.22), transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 20%, rgba(232, 192, 124, 0.10), transparent),
+      linear-gradient(180deg, #16283c 0%, var(--bg) 100%);
+    overflow: hidden;
+  }
+  .hero::after {  /* 海浪剪影 */
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: -2px; height: 70px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 70' preserveAspectRatio='none'%3E%3Cpath d='M0 70 L0 40 Q75 20 150 40 T300 40 T450 40 T600 40 T750 40 T900 40 T1050 40 T1200 40 L1200 70 Z' fill='%230a121c'/%3E%3C/svg%3E") bottom / 100% 100% no-repeat;
+    pointer-events: none;
+  }
+  .hero .mascot { font-size: clamp(3rem, 8vw, 4.5rem); }
+  .hero h1 {
+    margin-top: 10px;
+    font-size: clamp(2rem, 5.5vw, 3.2rem);
+    font-weight: 900; letter-spacing: 4px;
+    background: linear-gradient(120deg, var(--sand) 20%, var(--coral) 80%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .hero p.slogan { margin-top: 18px; font-size: clamp(1.05rem, 3vw, 1.3rem); font-weight: 700; letter-spacing: 2px; }
+  .hero p.sub { margin-top: 14px; color: var(--text-dim); font-size: 0.98rem; }
+  .hero p.sub span { margin: 0 8px; }
+  .ticket-banner {
+    display: inline-block; margin-top: 30px;
+    padding: 10px 26px; border-radius: 999px;
+    background: rgba(232, 192, 124, 0.12);
+    border: 1px dashed var(--sand);
+    color: var(--sand); font-weight: 700; letter-spacing: 1px;
+  }
+
+  section { padding: clamp(56px, 9vh, 90px) clamp(20px, 5vw, 60px); }
+  .wrap { max-width: 1000px; margin: 0 auto; }
+  .sec-title { text-align: center; font-size: clamp(1.5rem, 4vw, 1.9rem); font-weight: 900; letter-spacing: 3px; }
+  .sec-title::after {
+    content: ""; display: block; width: 48px; height: 4px; border-radius: 2px;
+    background: var(--sand); margin: 16px auto 0;
+  }
+  .sec-sub { text-align: center; color: var(--text-dim); margin: 16px auto 0; max-width: 560px; }
+
+  /* ── 價目 ── */
+  .plans { margin-top: 46px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .plan {
+    border-radius: var(--radius); border: 1px solid var(--line);
+    background: var(--card); overflow: hidden;
+  }
+  .plan-head { padding: 22px 26px 18px; border-bottom: 1px solid var(--line); }
+  .plan.day .plan-head { background: linear-gradient(135deg, rgba(232, 192, 124, 0.14), transparent 70%); }
+  .plan.night .plan-head { background: linear-gradient(135deg, rgba(94, 114, 196, 0.20), transparent 70%); }
+  .plan-head h3 { font-size: 1.3rem; font-weight: 900; letter-spacing: 2px; }
+  .plan-head .time { margin-top: 4px; color: var(--text-dim); font-size: 0.9rem; }
+  .plan-body { padding: 22px 26px 28px; }
+  table.price {
+    width: 100%; border-collapse: collapse; margin-top: 8px;
+    font-size: 0.98rem;
+  }
+  table.price th {
+    text-align: left; font-weight: 700; color: var(--sand);
+    padding: 8px 6px; border-bottom: 1px solid var(--line); font-size: 0.92rem;
+  }
+  table.price td { padding: 9px 6px; border-bottom: 1px solid rgba(40, 64, 90, 0.5); }
+  table.price td.tix { font-weight: 900; color: var(--coral); }
+  table.price tr:last-child td { border-bottom: none; }
+  .plan h4 { margin-top: 20px; font-size: 1.02rem; font-weight: 700; letter-spacing: 1px; }
+  .plan h4:first-child { margin-top: 0; }
+  .plan h4 .mode { font-size: 0.82rem; font-weight: 500; color: var(--text-dim); margin-left: 6px; }
+  .night-price {
+    display: flex; gap: 16px; margin-top: 8px; flex-wrap: wrap;
+  }
+  .night-price .np {
+    flex: 1; min-width: 120px; text-align: center;
+    background: rgba(43, 58, 107, 0.35); border: 1px solid var(--line);
+    border-radius: 12px; padding: 18px 12px;
+  }
+  .night-price .np .label { font-size: 0.88rem; color: var(--text-dim); }
+  .night-price .np .val { font-size: 2rem; font-weight: 900; color: var(--teal); margin-top: 4px; }
+  .night-price .np .val small { font-size: 0.9rem; font-weight: 700; }
+  .tip {
+    margin-top: 18px; padding: 12px 16px; border-radius: 10px;
+    background: rgba(232, 192, 124, 0.08); border-left: 3px solid var(--sand);
+    color: var(--text-dim); font-size: 0.9rem;
+  }
+  .tip b { color: var(--sand); }
+
+  /* ── 補給站 ── */
+  .supply {
+    margin-top: 26px;
+    display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap;
+    background: linear-gradient(135deg, rgba(79, 195, 161, 0.10), var(--card));
+    border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 24px 28px; text-align: center;
+  }
+  .supply .big { font-size: 1.6rem; }
+  .supply .deal { font-size: 1.25rem; font-weight: 900; letter-spacing: 1px; }
+  .supply .deal b { color: var(--teal); }
+  .supply .note { color: var(--text-dim); font-size: 0.9rem; width: 100%; }
+
+  /* ── 保障 ── */
+  #guarantee { background: var(--bg-soft); }
+  .guards { margin-top: 46px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+  .guard {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 28px 24px;
+  }
+  .guard .emo { font-size: 1.7rem; }
+  .guard h4 { margin-top: 12px; font-size: 1.08rem; font-weight: 700; letter-spacing: 1px; color: var(--sand); }
+  .guard p { margin-top: 8px; color: var(--text-dim); font-size: 0.92rem; }
+
+  /* ── 注意事項 ── */
+  .notes { margin-top: 40px; max-width: 640px; margin-left: auto; margin-right: auto; }
+  .note-item {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 16px 0; border-bottom: 1px solid rgba(40, 64, 90, 0.5);
+  }
+  .note-item:last-child { border-bottom: none; }
+  .note-item .emo { font-size: 1.25rem; line-height: 1.5; }
+  .note-item p { color: var(--text-dim); font-size: 0.95rem; }
+  .note-item p b { color: var(--text); }
+
+  /* ── CTA ── */
+  #contact { text-align: center; background: var(--bg-soft); }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 14px 36px; border-radius: 999px;
+    font-size: 1.05rem; font-weight: 700; text-decoration: none;
+    transition: transform .15s;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-line { background: var(--line-green); color: #fff; box-shadow: 0 6px 24px rgba(6, 199, 85, 0.3); }
+  .btn-line svg { width: 22px; height: 22px; fill: #fff; }
+  #contact .id { margin-top: 16px; color: var(--text-dim); font-size: 0.95rem; }
+  #contact .id b { color: var(--text); }
+
+  footer {
+    padding: 34px 20px; text-align: center;
+    color: #64708a; font-size: 0.85rem;
+    border-top: 1px solid var(--line);
+  }
+  footer a { color: var(--sand); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="../">← 暮林工作室</a>
+  <div class="nav-links">
+    <a href="#pricing">方案價目</a>
+    <a href="#guarantee">雙方保障</a>
+    <a href="#notes">注意事項</a>
+    <a href="#contact">聯絡我們</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="mascot">🐙</div>
+  <h1>老八度假旅行社</h1>
+  <p class="slogan">來濕熱林渡假,等級交給老八。</p>
+  <p class="sub">老八工作室<span>|</span>維納斯伺服器<span>|</span>濕熱林帶練團</p>
+  <div class="ticket-banner">🎫 全方案採「天使支票」交易</div>
+</header>
+
+<section id="pricing">
+  <div class="wrap">
+    <h2 class="sec-title">方案價目</h2>
+    <p class="sec-sub">白天想 Chill、半夜想掛著睡覺都有方案,時數彈性任你挑。</p>
+    <div class="plans">
+
+      <div class="plan day">
+        <div class="plan-head">
+          <h3>☀️ 白天 Chill 行程</h3>
+          <p class="time">時段彈性,私訊預約</p>
+        </div>
+        <div class="plan-body">
+          <h4>VIP 專屬行程 <span class="mode">1 對 1</span></h4>
+          <table class="price">
+            <tr><th>時數</th><th>天使支票</th></tr>
+            <tr><td>2 小時</td><td class="tix">2 票</td></tr>
+            <tr><td>5 小時</td><td class="tix">3 票</td></tr>
+            <tr><td>8 小時</td><td class="tix">4 票</td></tr>
+          </table>
+          <h4>好友同行方案 <span class="mode">1 對 多</span></h4>
+          <table class="price">
+            <tr><th>時數</th><th>天使支票</th></tr>
+            <tr><td>2 小時</td><td class="tix">1 票</td></tr>
+            <tr><td>5 小時</td><td class="tix">2 票</td></tr>
+            <tr><td>8 小時</td><td class="tix">3 票</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="plan night">
+        <div class="plan-head">
+          <h3>🌙 夜宿渡假方案</h3>
+          <p class="time">固定時段 02:00 – 12:00</p>
+        </div>
+        <div class="plan-body">
+          <div class="night-price">
+            <div class="np">
+              <div class="label">VIP 專屬行程(1 對 1)</div>
+              <div class="val">4<small> 票</small></div>
+            </div>
+            <div class="np">
+              <div class="label">好友同行方案(1 對 多)</div>
+              <div class="val">3<small> 票</small></div>
+            </div>
+          </div>
+          <p class="tip">💤 睡前上線交給老八,一覺醒來等級直接升好升滿。</p>
+          <p class="tip">⭐ 一帶多建議角色與怪物等差 <b>30 等以上</b>,經驗效益近似一帶一!</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="supply">
+      <span class="big">🏪</span>
+      <span class="deal">老八補給站:<b>1 票 = 15 張</b> 三倍經驗卡</span>
+      <span class="note">忘記攜帶可直接向領隊購買!</span>
+    </div>
+  </div>
+</section>
+
+<section id="guarantee">
+  <div class="wrap">
+    <h2 class="sec-title">雙方保障方案</h2>
+    <p class="sec-sub">計時透明、紀錄留存,買家與領隊雙方都有保障。</p>
+    <div class="guards">
+      <div class="guard">
+        <div class="emo">📸</div>
+        <h4>全程截圖存證</h4>
+        <p>領隊使用截圖軟體,每 2 分鐘自動截圖一次,服務全程留存紀錄,雙方可隨時核對。</p>
+      </div>
+      <div class="guard">
+        <div class="emo">⏸️</div>
+        <h4>斷線即停錶</h4>
+        <p>不管哪一方斷線,計時立即停止。不多算一分鐘,時數算得清清楚楚。</p>
+      </div>
+      <div class="guard">
+        <div class="emo">💰</div>
+        <h4>領隊斷線:全額返還</h4>
+        <p>領隊斷線期間的時數,票券依比例<b>全數返還</b>,不讓買家吃虧。</p>
+      </div>
+      <div class="guard">
+        <div class="emo">📢</div>
+        <h4>買家斷線:即時通知</h4>
+        <p>領隊在線上會立即透過通訊軟體通知買家上線;買家未上線期間的時數,票券依比例以<b>半價返還</b>。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="notes">
+  <div class="wrap">
+    <h2 class="sec-title">注意事項</h2>
+    <div class="notes">
+      <div class="note-item">
+        <span class="emo">💬</span>
+        <p><b>Discord 帶練專屬頻道</b> — 帶練期間即時溝通、回報進度都在專屬頻道進行。</p>
+      </div>
+      <div class="note-item">
+        <span class="emo">📊</span>
+        <p><b>一帶多效益提醒</b> — 建議角色與怪物等差 30 等以上,經驗效益近似一帶一。</p>
+      </div>
+      <div class="note-item">
+        <span class="emo">🤝</span>
+        <p><b>客製包團、長期合作</b> — 特殊需求、固定班表都歡迎洽詢,給你專屬報價。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2 class="sec-title">預約渡假</h2>
+    <p class="sec-sub">放鬆渡假、安心升等,就交給老八!</p>
+    <div style="margin-top: 36px;">
+      <!-- TODO: 將下方 href 與 LINE ID 換成實際的 LINE 帳號 -->
+      <a class="btn btn-line" href="https://line.me/ti/p/~YOUR-LINE-ID" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.42 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.02.89.56 1.1-.47 5.91-3.48 8.07-5.96C21.74 13.32 22 11.78 22 10.13 22 5.64 17.52 2 12 2zM8.39 12.9H6.16a.53.53 0 0 1-.53-.52V8.1a.53.53 0 0 1 1.06 0v3.75h1.7a.53.53 0 0 1 0 1.05zm1.88-.52a.53.53 0 0 1-1.06 0V8.1a.53.53 0 0 1 1.06 0v4.28zm5.17 0a.53.53 0 0 1-.95.31l-2.2-2.99v2.68a.53.53 0 0 1-1.05 0V8.1a.53.53 0 0 1 .95-.31l2.2 2.99V8.1a.53.53 0 0 1 1.05 0v4.28zm3.4-2.67a.53.53 0 0 1 0 1.06h-1.7v1.08h1.7a.53.53 0 0 1 0 1.05h-2.23a.53.53 0 0 1-.52-.52V8.1c0-.29.23-.52.52-.52h2.23a.53.53 0 0 1 0 1.05h-1.7v1.08h1.7z"/></svg>
+        加 LINE 預約
+      </a>
+      <p class="id">LINE ID:<b>YOUR-LINE-ID</b></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 <a href="../">暮林工作室 Mulin Studio</a>・老八度假旅行社・本站為玩家服務工作室,與遊戲官方無關
+</footer>
+
+</body>
+</html>
