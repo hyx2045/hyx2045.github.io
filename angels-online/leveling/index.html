@@ -139,6 +139,15 @@
   .plan-head { padding: 22px 26px 18px; border-bottom: 1px solid var(--line); }
   .plan.day .plan-head { background: linear-gradient(135deg, rgba(232, 192, 124, 0.14), transparent 70%); }
   .plan.night .plan-head { background: linear-gradient(135deg, rgba(94, 114, 196, 0.20), transparent 70%); }
+  .plan.full .plan-head { background: linear-gradient(135deg, rgba(79, 195, 161, 0.18), transparent 70%); }
+  .plan.charter .plan-head { background: linear-gradient(135deg, rgba(164, 139, 240, 0.20), transparent 70%); }
+  .plan.full { border-color: rgba(79, 195, 161, 0.45); }
+  .plan-head .hot {
+    display: inline-block; vertical-align: middle; margin-left: 10px;
+    font-size: 0.72rem; font-weight: 700; letter-spacing: 1px;
+    padding: 3px 12px; border-radius: 999px;
+    background: rgba(240, 133, 90, 0.2); color: var(--coral);
+  }
   .plan-head h3 { font-size: 1.3rem; font-weight: 900; letter-spacing: 2px; }
   .plan-head .time { margin-top: 4px; color: var(--text-dim); font-size: 0.9rem; }
   .plan-body { padding: 22px 26px 28px; }
@@ -258,14 +267,14 @@
 
       <div class="dest jungle">
         <div class="scene">🌴🦜</div>
-        <span class="lv">適合 Lv 110</span>
+        <span class="lv">怪物等級 Lv110</span>
         <h3>濕熱林</h3>
         <p>老八本店的招牌行程。湛藍海景配椰子汁,白沙灘旁的雨林裡經驗值嘩嘩地漲,渡假練功兩不誤。</p>
       </div>
 
       <div class="dest palace">
         <div class="scene">🏰🌙</div>
-        <span class="lv">適合 Lv 119・120</span>
+        <span class="lv">怪物等級 Lv119・120</span>
         <h3>千夜魔宮</h3>
         <p>入夜後的魔宮探險路線,高等角色衝級首選。星空下的千夜迴廊,一路練到出神入化。</p>
       </div>
@@ -293,7 +302,7 @@
             <tr><td>5 小時</td><td class="tix">3 票</td><td class="twd">NT$435</td></tr>
             <tr><td>8 小時</td><td class="tix">4 票</td><td class="twd">NT$580</td></tr>
           </table>
-          <h4>好友同行方案 <span class="mode">1 對 多</span></h4>
+          <h4>好友同行方案 <span class="mode">1 對 2・上限 2 名</span></h4>
           <table class="price">
             <tr><th>時數</th><th>天使支票</th><th>台幣參考</th></tr>
             <tr><td>2 小時</td><td class="tix">1 票</td><td class="twd">NT$145</td></tr>
@@ -316,13 +325,53 @@
               <div class="twd">NT$580</div>
             </div>
             <div class="np">
-              <div class="label">好友同行方案(1 對 多)</div>
+              <div class="label">好友同行方案(1 對 2)</div>
               <div class="val">3<small> 票</small></div>
               <div class="twd">NT$435</div>
             </div>
           </div>
           <p class="tip">💤 睡前上線交給老八,一覺醒來等級直接升好升滿。</p>
-          <p class="tip">⭐ 一帶多建議角色與怪物等差 <b>30 等以上</b>,經驗效益近似一帶一!</p>
+          <p class="tip">⭐ 好友同行採 <b>1 帶 2、上限 2 名</b>,並建議角色與怪物等差 <b>30 等以上</b>,兼顧每位隊員的經驗效益!</p>
+        </div>
+      </div>
+
+      <div class="plan full">
+        <div class="plan-head">
+          <h3>🏝️ 包日暢練<span class="hot">🔥 最超值</span></h3>
+          <p class="time">連續 24 小時,白天時段+夜宿時段一次包</p>
+        </div>
+        <div class="plan-body">
+          <div class="night-price">
+            <div class="np">
+              <div class="label">VIP 專屬行程(1 對 1)</div>
+              <div class="val">8<small> 票</small></div>
+              <div class="twd">NT$1,160</div>
+            </div>
+            <div class="np">
+              <div class="label">好友同行方案(每人)</div>
+              <div class="val">6<small> 票</small></div>
+              <div class="twd">NT$870</div>
+            </div>
+          </div>
+          <p class="tip">💡 只付「夜宿+白天 8 小時」的價格,中間 <b>6 小時直接送你</b>——平均每小時不到 NT$50,一路帶到底零空檔。</p>
+        </div>
+      </div>
+
+      <div class="plan charter">
+        <div class="plan-head">
+          <h3>👑 VIP 包團方案</h3>
+          <p class="time">整團包場專屬,只帶你與你指定的隊友(至多 2 名)</p>
+        </div>
+        <div class="plan-body">
+          <table class="price">
+            <tr><th>時段</th><th>天使支票</th><th>台幣參考</th></tr>
+            <tr><td>2 小時</td><td class="tix">3 票</td><td class="twd">NT$435</td></tr>
+            <tr><td>5 小時</td><td class="tix">5 票</td><td class="twd">NT$725</td></tr>
+            <tr><td>8 小時</td><td class="tix">6 票</td><td class="twd">NT$870</td></tr>
+            <tr><td>夜宿時段</td><td class="tix">6 票</td><td class="twd">NT$870</td></tr>
+            <tr><td>包日 24 小時</td><td class="tix">12 票</td><td class="twd">NT$1,740</td></tr>
+          </table>
+          <p class="tip">👥 不與陌生人併團,地圖、路線、節奏完全客製;兩人同行平攤後與散客同價,整團專屬感直接升級。</p>
         </div>
       </div>
 
@@ -371,11 +420,11 @@
     <div class="notes">
       <div class="note-item">
         <span class="emo">💬</span>
-        <p><b>Discord 帶練專屬頻道</b> — 帶練期間即時溝通、回報進度都在專屬頻道進行。</p>
+        <p><b>支援 Discord / LINE 即時通訊</b> — 帶練期間即時溝通、回報進度,用你順手的軟體就行。</p>
       </div>
       <div class="note-item">
         <span class="emo">📊</span>
-        <p><b>一帶多效益提醒</b> — 建議角色與怪物等差 30 等以上,經驗效益近似一帶一。</p>
+        <p><b>好友同行上限 2 名</b> — 一帶二為上限,不超收,確保每位隊員的經驗效益。</p>
       </div>
       <div class="note-item">
         <span class="emo">🤝</span>
