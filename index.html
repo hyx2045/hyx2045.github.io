@@ -1,486 +1,341 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-  <meta charset="utf-8">
-  
-  <title>Page 1 | Lucien&#39;s Utopia</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  
-  
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Lucien&#39;s Utopia">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Lucien&#39;s Utopia">
-<meta property="og:locale" content="zh-tw">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lucien&#39;s Utopia">
-  
-    <link rel="alternate" href="/atom.xml" title="Lucien&#39;s Utopia" type="application/atom+xml">
-  
-  <link rel="icon" href="/css/images/favicon.ico">
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
-  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-  <style type="text/css">
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
-    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
-    
-  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>暮林工作室 Mulin Studio|代課練功・虛擬寶物・點數交易</title>
+<meta name="description" content="暮林工作室 Mulin Studio — 專業遊戲服務團隊,提供代課練功、虛擬寶物交易、遊戲點數交易。目前主力服務:天使之戀 Online,更多遊戲陸續開放。">
+<meta property="og:title" content="暮林工作室 Mulin Studio">
+<meta property="og:description" content="代課練功・虛擬寶物交易・點數交易|主力遊戲:天使之戀 Online">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lucienlo.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌲%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #10151f;
+    --bg-soft: #161d2b;
+    --card: #1c2434;
+    --card-hover: #222c40;
+    --line: #2a3550;
+    --text: #e9e7e1;
+    --text-dim: #9aa3b5;
+    --amber: #e8a04c;
+    --amber-soft: #f2b76e;
+    --green: #5fa878;
+    --line-green: #06c755;
+    --radius: 14px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
 
-  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
-  <link rel="stylesheet" href="/css/style.css">
+  /* ── Nav ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px clamp(20px, 5vw, 60px);
+    background: rgba(16, 21, 31, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-brand { font-weight: 900; font-size: 1.15rem; letter-spacing: 1px; color: var(--text); text-decoration: none; }
+  .nav-brand span { color: var(--amber); }
+  .nav-links { display: flex; gap: clamp(14px, 3vw, 32px); }
+  .nav-links a {
+    color: var(--text-dim); text-decoration: none; font-size: 0.95rem; font-weight: 500;
+    transition: color .2s;
+  }
+  .nav-links a:hover { color: var(--amber-soft); }
 
-  <script src="/js/jquery-3.1.1.min.js"></script>
+  /* ── Hero ── */
+  .hero {
+    position: relative;
+    padding: clamp(70px, 12vh, 130px) clamp(20px, 5vw, 60px) clamp(90px, 14vh, 150px);
+    text-align: center;
+    background:
+      radial-gradient(ellipse 90% 70% at 50% -10%, rgba(232, 160, 76, 0.16), transparent 60%),
+      linear-gradient(180deg, #141a28 0%, var(--bg) 100%);
+    overflow: hidden;
+  }
+  .hero::after {  /* 森林剪影 */
+    content: "";
+    position: absolute; left: 0; right: 0; bottom: -2px; height: 110px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 110' preserveAspectRatio='none'%3E%3Cpath d='M0 110 L0 78 L30 78 L45 48 L60 78 L75 78 L95 30 L115 78 L135 78 L150 55 L165 78 L200 78 L220 22 L240 78 L262 78 L278 50 L294 78 L330 78 L352 38 L374 78 L400 78 L418 60 L436 78 L470 78 L492 18 L514 78 L540 78 L556 52 L572 78 L610 78 L632 35 L654 78 L680 78 L698 58 L716 78 L750 78 L772 25 L794 78 L820 78 L838 55 L856 78 L890 78 L912 40 L934 78 L960 78 L978 60 L996 78 L1030 78 L1052 20 L1074 78 L1100 78 L1118 50 L1136 78 L1170 78 L1185 62 L1200 78 L1200 110 Z' fill='%230c1018'/%3E%3C/svg%3E") bottom / 100% 100% no-repeat;
+    pointer-events: none;
+  }
+  .hero h1 {
+    font-size: clamp(2.2rem, 6vw, 3.6rem);
+    font-weight: 900; letter-spacing: 4px; line-height: 1.25;
+  }
+  .hero h1 .en { display: block; font-size: 0.38em; letter-spacing: 6px; color: var(--amber); font-weight: 700; margin-top: 10px; }
+  .hero p.tagline {
+    margin: 26px auto 0; max-width: 560px;
+    color: var(--text-dim); font-size: clamp(1rem, 2.5vw, 1.15rem);
+  }
+  .hero .pills { margin-top: 30px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .pill {
+    padding: 8px 20px; border-radius: 999px;
+    border: 1px solid var(--line); background: rgba(28, 36, 52, 0.7);
+    font-size: 0.92rem; color: var(--text);
+  }
+  .pill b { color: var(--amber-soft); font-weight: 700; }
+  .hero .cta-row { margin-top: 44px; }
+  .btn {
+    display: inline-block; padding: 14px 36px; border-radius: 999px;
+    font-size: 1.05rem; font-weight: 700; text-decoration: none;
+    transition: transform .15s, box-shadow .15s;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-amber {
+    background: linear-gradient(135deg, var(--amber), #d98a35);
+    color: #1a1206; box-shadow: 0 6px 24px rgba(232, 160, 76, 0.35);
+  }
 
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="/css/bootstrap.css" >
-  <link rel="stylesheet" href="/css/fashion.css" >
-  <link rel="stylesheet" href="/css/glyphs.css" >
+  /* ── Sections ── */
+  section { padding: clamp(60px, 10vh, 100px) clamp(20px, 5vw, 60px); }
+  .wrap { max-width: 1000px; margin: 0 auto; }
+  .sec-title { text-align: center; font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 900; letter-spacing: 3px; }
+  .sec-title::after {
+    content: ""; display: block; width: 48px; height: 4px; border-radius: 2px;
+    background: var(--amber); margin: 16px auto 0;
+  }
+  .sec-sub { text-align: center; color: var(--text-dim); margin: 18px auto 0; max-width: 520px; }
 
+  /* ── Services ── */
+  .cards { margin-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 34px 28px; transition: transform .2s, background .2s, border-color .2s;
+  }
+  .card:hover { transform: translateY(-4px); background: var(--card-hover); border-color: #3a4a6e; }
+  .card .icon {
+    width: 54px; height: 54px; border-radius: 14px; display: flex; align-items: center; justify-content: center;
+    background: rgba(232, 160, 76, 0.12); margin-bottom: 20px;
+  }
+  .card .icon svg { width: 28px; height: 28px; stroke: var(--amber); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .card h3 { font-size: 1.25rem; font-weight: 700; letter-spacing: 1px; }
+  .card p { margin-top: 12px; color: var(--text-dim); font-size: 0.95rem; }
+
+  /* ── Games ── */
+  #games { background: var(--bg-soft); }
+  .game-list { margin-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; max-width: 720px; margin-left: auto; margin-right: auto; }
+  .game {
+    border-radius: var(--radius); padding: 30px 28px; border: 1px solid var(--line);
+    background: var(--card);
+  }
+  .game.featured { border-color: rgba(232, 160, 76, 0.5); background: linear-gradient(160deg, rgba(232, 160, 76, 0.10), var(--card) 55%); }
+  .game .tag {
+    display: inline-block; font-size: 0.78rem; font-weight: 700; letter-spacing: 1px;
+    padding: 3px 12px; border-radius: 999px; margin-bottom: 14px;
+  }
+  .game.featured .tag { background: rgba(232, 160, 76, 0.18); color: var(--amber-soft); }
+  .game.coming .tag { background: rgba(95, 168, 120, 0.15); color: var(--green); }
+  .game h3 { font-size: 1.3rem; font-weight: 900; letter-spacing: 1px; }
+  .game p { margin-top: 10px; color: var(--text-dim); font-size: 0.95rem; }
+
+  /* ── Process ── */
+  .steps { margin-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; counter-reset: step; }
+  .step {
+    position: relative; background: var(--card); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 30px 24px 26px;
+  }
+  .step::before {
+    counter-increment: step; content: counter(step);
+    position: absolute; top: -16px; left: 22px;
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--amber); color: #1a1206;
+    font-weight: 900; font-size: 1rem;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 14px rgba(232, 160, 76, 0.4);
+  }
+  .step h4 { font-size: 1.05rem; font-weight: 700; margin-top: 4px; }
+  .step p { margin-top: 8px; color: var(--text-dim); font-size: 0.9rem; }
+
+  /* ── Trust ── */
+  .trust-row { margin-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; text-align: center; }
+  .trust { padding: 26px 18px; }
+  .trust .big { font-size: 1.8rem; }
+  .trust h4 { margin-top: 10px; font-size: 1.05rem; font-weight: 700; }
+  .trust p { margin-top: 6px; color: var(--text-dim); font-size: 0.9rem; }
+
+  /* ── Contact ── */
+  #contact { background: var(--bg-soft); text-align: center; }
+  .contact-box {
+    max-width: 520px; margin: 44px auto 0;
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 44px 32px;
+  }
+  .btn-line {
+    background: var(--line-green); color: #fff;
+    box-shadow: 0 6px 24px rgba(6, 199, 85, 0.3);
+    display: inline-flex; align-items: center; gap: 10px;
+  }
+  .btn-line svg { width: 24px; height: 24px; fill: #fff; }
+  .contact-box .id { margin-top: 18px; color: var(--text-dim); font-size: 0.95rem; }
+  .contact-box .id b { color: var(--text); letter-spacing: 1px; }
+  .contact-box .hours { margin-top: 6px; color: var(--text-dim); font-size: 0.88rem; }
+
+  /* ── Footer ── */
+  footer {
+    padding: 34px 20px; text-align: center;
+    color: #6b7488; font-size: 0.85rem;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (max-width: 560px) {
+    .nav-links a:not(:last-child) { display: none; }
+  }
+</style>
 </head>
+<body>
 
-
-
-  <body>
-
-
-  
-  
-  <div class="site-header-image">
-    <img id="originBg" width="100%" alt="Hike News" src="">
+<nav>
+  <a class="nav-brand" href="#top">暮<span>林</span>工作室</a>
+  <div class="nav-links">
+    <a href="#services">服務項目</a>
+    <a href="#games">支援遊戲</a>
+    <a href="#process">交易流程</a>
+    <a href="#contact">聯絡我們</a>
   </div>
+</nav>
 
-  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
-    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+<header class="hero" id="top">
+  <h1>暮林工作室<span class="en">MULIN STUDIO</span></h1>
+  <p class="tagline">專業遊戲服務團隊 — 讓你把時間留給生活,角色進度交給我們。</p>
+  <div class="pills">
+    <div class="pill"><b>代課練功</b></div>
+    <div class="pill"><b>虛擬寶物交易</b></div>
+    <div class="pill"><b>點數交易</b></div>
   </div>
-
-  <script>
-        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
-        var random = Math.floor((Math.random() * imgUrls.length ));
-        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
-          document.getElementById("originBg").src=imgUrls[random];
-          document.getElementById("blurBg").src=imgUrls[random];
-        } else {
-          document.getElementById("originBg").src='/' + imgUrls[random];
-          document.getElementById("blurBg").src='/' + imgUrls[random];
-        }
-    </script>
-
-
-
-
-<header id="allheader" class="site-header" role="banner" 
-   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
-  <div class="clearfix container">
-      <div class="site-branding">
-
-          <h1 class="site-title">
-            
-              <a href="/" title="Lucien&#39;s Utopia" rel="home"> Lucien&#39;s Utopia </a>
-            
-          </h1>
-          
-          
-            
-          <nav id="main-navigation" class="main-navigation" role="navigation">
-            <a class="nav-open">Menu</a>
-            <a class="nav-close">Close</a>
-
-            <div class="clearfix sf-menu">
-              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
-                    
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
-                    
-              </ul>
-            </div>
-          </nav>
-
-      </div>
+  <div class="cta-row">
+    <a class="btn btn-amber" href="#contact">立即詢價</a>
   </div>
 </header>
 
-
-  <div id="container">
-    <div id="wrap">
-            
-      <div id="content" class="outer">
-        
-          <section id="main">
-  
-    <article id="post-Welcome-to-My-Utopia"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/09/15/Welcome-to-My-Utopia/">Welcome to My Utopia</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/09/15/Welcome-to-My-Utopia/" class="article-date">
-	  <time datetime="2018-09-14T18:24:19.000Z" itemprop="datePublished">九月 15, 2018</time>
-	</a>
-
-       
-      
-
+<section id="services">
+  <div class="wrap">
+    <h2 class="sec-title">服務項目</h2>
+    <p class="sec-sub">三大核心服務,價格與細節歡迎直接私訊詢問。</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M13 2 L4 14 h6 l-1 8 9-12 h-6 z"/></svg>
+        </div>
+        <h3>代課練功</h3>
+        <p>專人代練,等級提升、任務推進、素材與資源農取。依需求安排時段,進度定期回報,安全穩定。</p>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><path d="M6 8 h12 l2 4 -10 9 -10 -9 z"/><path d="M6 8 l4 4 M18 8 l-4 4 M2 12 h20"/></svg>
+        </div>
+        <h3>虛擬寶物交易</h3>
+        <p>裝備、道具、遊戲幣收購與出售。行情透明、報價迅速,交易全程留存紀錄。</p>
+      </div>
+      <div class="card">
+        <div class="icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10 h18 M7 15 h4"/></svg>
+        </div>
+        <h3>點數交易</h3>
+        <p>遊戲點數與儲值服務,多種面額彈性選擇,快速到帳。</p>
+      </div>
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Hello, my name is Lucien.<br>I am from Taiwan, and also a newbie of blogger.</p>
-<p>In here, I am going to share some interesting stuff with you, like computer science, traveling or cooking.</p>
-<p>The most articles will be published in Mandarin, but I also desire to write some of articles in English to share some information with you in the world.</p>
-<p>At last, I’m glad to see you.</p>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-      
-      
-    </footer>
-    <hr class="entry-footer-hr">
   </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-hello-world"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/09/15/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/09/15/hello-world/" class="article-date">
-	  <time datetime="2018-09-14T18:25:23.599Z" itemprop="datePublished">九月 15, 2018</time>
-	</a>
-
-       
-      
-
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-      
-      
-    </footer>
-    <hr class="entry-footer-hr">
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-
-
 </section>
-          <aside id="sidebar">
-  
-    <div style="margin: 20px 0;">
-	<div id="search-form-wrap">
 
-    <form class="search-form">
-        <label style="width: 72%;">
-            <span class="screen-reader-text">Search for:</span>
-            <input type="search" class="search-field" style="height: 36px; width: 100%;" placeholder=" Search…" value="" name="s" title="Search for:">
-        </label>
-        <input type="submit" class="search-form-submit" value="Search">
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..."/>
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="/js/insight.js"></script>
-
-</div>
-</div>
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Connect With Us</h3>
-    <div class="widget widget_athemes_social_icons">
-
-    	<ul class="clearfix widget-social-icons">   
-    	
-   			<li><a href="https://github.com/lucienlo" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
-
-   		
-   			<li><a href="https://www.linkedin.com/in/lucienlo/" title="Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li> 
-
-   		
-   			<li><a href="https://www.facebook.com/lucienlo1993" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li> 
-
-   		
-   		</ul>
-
-
-   		<!--
-   		<ul class="clearfix widget-social-icons">   		
-   		<li class="widget-si-twitter"><a href="http://twitter.com" title="Twitter"><i class="ico-twitter"></i></a></li> 
-		<li class="widget-si-facebook"><a href="http://facebook.com" title="Facebook"><i class="ico-facebook"></i></a></li>
-			<li class="widget-si-gplus"><a href="http://plus.google.com" title="Google+"><i class="ico-gplus"></i></a></li>
-			<li class="widget-si-pinterest"><a href="http://pinterest.com" title="Pinterest"><i class="ico-pinterest"></i></a></li>
-			<li class="widget-si-flickr"><a href="http://flickr.com" title="Flickr"><i class="ico-flickr"></i></a></li>
-			<li class="widget-si-instagram"><a href="http://instagram.com" title="Instagram"><i class="ico-instagram"></i></a></li>
-		</ul> -->
-
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget_athemes_tabs">
-    <ul id="widget-tab" class="clearfix widget-tab-nav">
-      <li class="active"><a>Recent Posts</a></li>
-    </ul>
-    <div class="widget">
-      <ul>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/09/15/hello-world/">Hello World</a></h6>
-              <span>九月 15, 2018</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2018/09/15/Welcome-to-My-Utopia/">Welcome to My Utopia</a></h6>
-              <span>九月 15, 2018</span>
-            </div>
-
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-  </div>
-
-
-  
-</aside>
-        
+<section id="games">
+  <div class="wrap">
+    <h2 class="sec-title">支援遊戲</h2>
+    <p class="sec-sub">目前以下列遊戲為主力,其他遊戲需求也歡迎詢問。</p>
+    <div class="game-list">
+      <div class="game featured">
+        <span class="tag">主力服務中</span>
+        <h3>天使之戀 Online</h3>
+        <p>代練、虛寶、點數全服務項目支援。熟悉版本生態與行情,經驗豐富。</p>
       </div>
-
+      <div class="game coming">
+        <span class="tag">陸續開放</span>
+        <h3>更多遊戲</h3>
+        <p>服務範圍持續擴充中。你玩的遊戲不在清單上?直接私訊詢問,我們評估後回覆。</p>
+      </div>
     </div>
-    <!-- <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-    <a href="/categories" class="mobile-nav-link">Categories</a>
-  
-    <a href="/tags" class="mobile-nav-link">Tags</a>
-  
-    <a href="/about" class="mobile-nav-link">About</a>
-  
-</nav> -->
-    <footer id="footer" class="site-footer">
-  
-
-  <div class="clearfix container">
-      <div class="site-info">
-	      &copy; 2018 Lucien&#39;s Utopia All Rights Reserved.
-        
-            <span id="busuanzi_container_site_uv">
-              Visit Number <span id="busuanzi_value_site_uv"></span>.  
-              Total Visit Number <span id="busuanzi_value_site_pv"></span>.
-            </span>
-          
-      </div>
-      <div class="site-credit">
-        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
-      </div>
   </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <h2 class="sec-title">交易流程</h2>
+    <p class="sec-sub">簡單四步,快速完成。</p>
+    <div class="steps">
+      <div class="step">
+        <h4>私訊需求</h4>
+        <p>透過 LINE 告訴我們遊戲、伺服器與需求內容。</p>
+      </div>
+      <div class="step">
+        <h4>確認報價</h4>
+        <p>我們評估後提供報價與預估時程,確認後才進行。</p>
+      </div>
+      <div class="step">
+        <h4>執行服務</h4>
+        <p>開始代練或安排交易,過程中隨時可查詢進度。</p>
+      </div>
+      <div class="step">
+        <h4>完成交付</h4>
+        <p>確認成果無誤後完成交易,售後問題持續協助。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trust">
+  <div class="wrap">
+    <h2 class="sec-title">為什麼選擇暮林</h2>
+    <div class="trust-row">
+      <div class="trust">
+        <div class="big">🤝</div>
+        <h4>誠信經營</h4>
+        <p>報價透明、說到做到,所有交易皆留存完整紀錄。</p>
+      </div>
+      <div class="trust">
+        <div class="big">⚡</div>
+        <h4>回覆迅速</h4>
+        <p>私訊快速回應,報價不拖延,進度主動回報。</p>
+      </div>
+      <div class="trust">
+        <div class="big">🔒</div>
+        <h4>帳號安全</h4>
+        <p>謹慎操作、保護客戶資料,交易資訊絕不外流。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2 class="sec-title">聯絡我們</h2>
+    <p class="sec-sub">詢價、報價、任何問題,加 LINE 聊聊最快。</p>
+    <div class="contact-box">
+      <!-- TODO: 將下方 href 與 LINE ID 換成實際的 LINE 帳號 -->
+      <a class="btn btn-line" href="https://line.me/ti/p/~YOUR-LINE-ID" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 5.64 2 10.13c0 4.03 3.58 7.4 8.42 8.04.33.07.77.22.89.5.1.26.07.66.03.92l-.14.86c-.04.26-.2 1.02.89.56 1.1-.47 5.91-3.48 8.07-5.96C21.74 13.32 22 11.78 22 10.13 22 5.64 17.52 2 12 2zM8.39 12.9H6.16a.53.53 0 0 1-.53-.52V8.1a.53.53 0 0 1 1.06 0v3.75h1.7a.53.53 0 0 1 0 1.05zm1.88-.52a.53.53 0 0 1-1.06 0V8.1a.53.53 0 0 1 1.06 0v4.28zm5.17 0a.53.53 0 0 1-.95.31l-2.2-2.99v2.68a.53.53 0 0 1-1.05 0V8.1a.53.53 0 0 1 .95-.31l2.2 2.99V8.1a.53.53 0 0 1 1.05 0v4.28zm3.4-2.67a.53.53 0 0 1 0 1.06h-1.7v1.08h1.7a.53.53 0 0 1 0 1.05h-2.23a.53.53 0 0 1-.52-.52V8.1c0-.29.23-.52.52-.52h2.23a.53.53 0 0 1 0 1.05h-1.7v1.08h1.7z"/></svg>
+        加 LINE 詢問
+      </a>
+      <p class="id">LINE ID:<b>YOUR-LINE-ID</b></p>
+      <p class="hours">回覆時間:每日 12:00 – 24:00(台灣時間)</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 暮林工作室 Mulin Studio・本站為玩家服務工作室,與遊戲官方無關
 </footer>
 
-
-<!-- min height -->
-
-<script>
-    var wrapdiv = document.getElementById("wrap");
-    var contentdiv = document.getElementById("content");
-
-    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
-    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
-
-
-    <!-- headerblur min height -->
-    
-      var headerblur = document.getElementById("header-blur");
-      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
-    
-    
-</script>
-
-    
-<div style="display: none;">
-  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
-</div>
-
-<!-- mathjax config similar to math.stackexchange -->
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-</script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-<script src="/js/bootstrap.js"></script>
-<script src="/js/main.js"></script>
-
-
-
-
-
-
-
-  <div style="display: none;">
-    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
-  </div>
-
-
-
-	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-	</script>
-
-
-
-
-
-
-  </div>
-
-  <a id="rocket" href="#top" class=""></a>
-  <script type="text/javascript" src="/js/totop.js" async=""></script>
 </body>
 </html>
